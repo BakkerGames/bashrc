@@ -1,0 +1,3 @@
+Add this line in the PropertyGroup of the project, just after the TargetFrameworks
+
+<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
